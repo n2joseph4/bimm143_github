@@ -1,0 +1,24 @@
+---
+title: "Week 3 R Functions: Lab 6 Supplement"
+author: "Nathan Joseph"
+date: "2026-01-23"
+output: pdf_document
+---
+
+### Q6:
+
+```{r}
+library(bio3d) # importing bio3d for use in the helper function
+helper <- function(proteins){ #function line takes in a vector of protein PDB 
+  # datas and then outputs the associated plot for that specific protein
+  for (i in proteins){ #looping through the vector of protein PDB datas
+    s <- read.pdb(i) #1. Reading the pdb of the specific protein
+    s.chainA <- trim.pdb(s, chain="A", elety="CA") #2. Assigning chain A using trim.pdb()
+    s.b <- s.chainA$atom$b #3. Assigning b from Chain A
+    #4. Plotting the protein:
+    plotb3(s.b, sse=s.chainA, typ="l", ylab="Bfactor", main = paste("B-factor Plot for", i)) 
+  }
+}
+helper(c("4AKE","1AKE","1E4Y"))
+```
+

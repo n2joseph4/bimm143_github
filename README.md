@@ -3,8 +3,7 @@ My classwork from [BIMM143](https://bioboot.github.io/bimm143_W26/) at UC San Di
 
 ## Index of Material
 
-
-*Introductory Classes*
+*Classes & Projects*
 
 Class 04 [R fundamentals](Class4/Class4.md)
 

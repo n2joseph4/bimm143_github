@@ -18,32 +18,32 @@ seq
 ```
 
 ```{r}
-pos <- which(conserv(seq) != 1)
-pos
+#pos <- which(conserv(seq) != 1)
+#pos
 ```
 
 ```{r}
-seq$ali[, pos]
+#seq$ali[, pos]
 ```
 
 ```{r}
-print("S1324R")
+#print("S1324R")
 ```
 
 ```{r}
-seq$ali
+#seq$ali
 ```
 
 ```{r}
-mut_protein_seq <- paste(seq$ali["mutant_tumor", ], collapse = "")
+#mut_protein_seq <- paste(seq$ali["mutant_tumor", ], collapse = "")
 
-mut_protein_seq
+#mut_protein_seq
 ```
 
 ```{r}
-wt_protein_seq <- paste(seq$ali["wt_healthy", ], collapse = "")
+#wt_protein_seq <- paste(seq$ali["wt_healthy", ], collapse = "")
 
-wt_protein_seq
+#wt_protein_seq
 ```
 
 

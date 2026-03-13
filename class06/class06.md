@@ -96,7 +96,7 @@ The `sample()` function in R randomly selects items from a vector
 sample(1:10, size=4)
 ```
 
-    [1] 6 2 9 7
+    [1] 5 7 6 3
 
 > Q. Return 12 numbers picked randomly from the input 1:10
 
@@ -104,7 +104,7 @@ sample(1:10, size=4)
 sample(1:10, size=12, replace=TRUE)
 ```
 
-     [1] 10  4  9  7  4  5  6  2  4 10  3  3
+     [1] 10  9  1  3  7  9 10  5  3  7  6  3
 
 > Q: Write the code to generate a random 12 nucleotide long DNA
 > sequence?
@@ -114,7 +114,7 @@ bases <- c('A','C','G','T')
 sample(bases, size=12, replace=TRUE)
 ```
 
-     [1] "C" "C" "T" "T" "T" "C" "T" "T" "C" "T" "A" "G"
+     [1] "C" "G" "A" "A" "A" "G" "G" "G" "T" "C" "C" "A"
 
 > Q. Write a first version function called `generate_dna()` that
 > generates a user specified length `n` random DNA sequence?
@@ -130,7 +130,7 @@ generate_dna <- function(n=4){
 generate_dna(10)
 ```
 
-     [1] "G" "G" "A" "A" "T" "T" "T" "A" "G" "G"
+     [1] "A" "G" "G" "C" "G" "G" "A" "A" "T" "A"
 
 > Q. Modify your function to return a FASTA like sequence so rather than
 > \[1\] “G” “A” “T” “G” “C” “C” we want “GATGCC”
@@ -148,7 +148,7 @@ generate_dna <- function(n=4){
 generate_dna(7)
 ```
 
-    [1] "CCCTAAC"
+    [1] "AGCTCGC"
 
 > Q. Give the user an option to return FASTA format ouput sequence or
 > standard multi-element vector format?
@@ -174,7 +174,7 @@ generate_dna(5)
 
     Hello...
 
-    [1] "GAGTG"
+    [1] "GGAAA"
 
 ``` r
 generate_dna(5, fasta = FALSE)
@@ -182,7 +182,7 @@ generate_dna(5, fasta = FALSE)
 
     ... is it me you are looking for...
 
-    [1] "T" "G" "T" "A" "A"
+    [1] "T" "A" "T" "C" "C"
 
 ## A new cool function
 
@@ -209,43 +209,43 @@ generate_protein <- function(n=4, fasta=TRUE){
 generate_protein(6)
 ```
 
-    [1] "GTRCDC"
+    [1] "WVYPCV"
 
 ``` r
 generate_protein(7)
 ```
 
-    [1] "KMCLIVY"
+    [1] "ELCNTEL"
 
 ``` r
 generate_protein(8)
 ```
 
-    [1] "WRTNLWTK"
+    [1] "EEDETECE"
 
 ``` r
 generate_protein(9)
 ```
 
-    [1] "MYEDIDDFV"
+    [1] "EAFEDMPVL"
 
 ``` r
 generate_protein(10)
 ```
 
-    [1] "HRNMVAGHFA"
+    [1] "EPNLLLLKDT"
 
 ``` r
 generate_protein(11)
 ```
 
-    [1] "YAPTAMQMCFM"
+    [1] "QSGQQRDECMR"
 
 ``` r
 generate_protein(12)
 ```
 
-    [1] "DKHTRQQFVPDN"
+    [1] "SCCYEFPLGHLT"
 
 Or we could do a `for()` loop:
 
@@ -257,19 +257,19 @@ for(i in 6:12){
 ```
 
     >6
-    VKPSPT 
+    RQEATT 
     >7
-    VILPKME 
+    THQTGGQ 
     >8
-    DSSQECPN 
+    QQDQIMLS 
     >9
-    RDYFGQLQW 
+    LLGVCVIQT 
     >10
-    VFAQWHWCVW 
+    PSWNHCDKNI 
     >11
-    WQWNGMVTFQD 
+    EFTFKIYNGWN 
     >12
-    LPNPWERWCALC 
+    LWFVIDHCLSQF 
 
 The protein sequences of 8-12 are unique in nature as they do not appear
 in the NR database in NCBI.

@@ -52,16 +52,16 @@ We can use the main [Molstar viewer online](https://molstar.org/viewer/):
 ```{r}
 library(bio3d)
 
-hiv <- read.pdb("1HSG")
-hiv
+#hiv <- read.pdb("1HSG")
+#hiv
 ```
 
 ```{r}
-head(hiv$atom)
+#head(hiv$atom)
 ```
 
 ```{r}
-pdbseq(hiv)
+#pdbseq(hiv)
 ```
 
 Let's try out the new **bio3dview** package that is not yet on CRAN.
@@ -73,7 +73,7 @@ We can use the **remotes** package to install any R package from Github.
 library(bio3dview)
 library(bio3d)
 
-sele <- atom.select(hiv, resno=25)
+#sele <- atom.select(hiv, resno=25)
 
 #view.pdb(hiv, backgroundColor="pink", highlight=sele, highlight.style="vdw")
 ```
@@ -81,10 +81,10 @@ sele <- atom.select(hiv, resno=25)
 ### Prediction of Protein flexibility
 
 ```{r}
-adk <- read.pdb("6s36")
-m <- nma(adk)
+#adk <- read.pdb("6s36")
+#m <- nma(adk)
 
-plot(m)
+#plot(m)
 ```
 
 Write out our results as a wee trajectory movie:

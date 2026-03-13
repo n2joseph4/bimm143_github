@@ -1,0 +1,49 @@
+---
+title: "class19"
+author: "Nathan Joseph (PID: A17668656)"
+format: html
+---
+
+# Cancer Mutation Analysis
+
+## Q1
+
+```{r}
+library(seqinr)
+seq <- read.fasta("A17668656_mutant_seq.fa")
+```
+
+```{r}
+seq
+```
+
+```{r}
+pos <- which(conserv(seq) != 1)
+pos
+```
+
+```{r}
+seq$ali[, pos]
+```
+
+```{r}
+print("S1324R")
+```
+
+```{r}
+seq$ali
+```
+
+```{r}
+mut_protein_seq <- paste(seq$ali["mutant_tumor", ], collapse = "")
+
+mut_protein_seq
+```
+
+```{r}
+wt_protein_seq <- paste(seq$ali["wt_healthy", ], collapse = "")
+
+wt_protein_seq
+```
+
+

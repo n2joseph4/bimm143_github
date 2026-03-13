@@ -1,0 +1,14 @@
+---
+title: "Class4"
+author: "Nathan Joseph (PID: A17668656)"
+format: html
+---
+
+# Introduction to R 
+```{r}
+x <- 1:50
+plot(x)
+plot(x, sin(x), typ='l', col = 'red', lwd = 3, 
+     xlab="Is it lunch time yet?")
+```
+

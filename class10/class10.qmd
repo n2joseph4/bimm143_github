@@ -18,21 +18,21 @@ The [Protein Data Bank (PDB)](http://www.rcsb.org/) is the main repository of bi
 
 ```{r}
 stats <- read.csv("pdb_stats.csv", row.names = 1)
-stats
+#stats
 ```
 ```{r}
-n.sums <- colSums(stats) # sum value for each column of the df
-round((n.sums/n.sums['Total'] * 100), digits=2)
+#n.sums <- colSums(stats) # sum value for each column of the df
+#round((n.sums/n.sums['Total'] * 100), digits=2)
 ```
 
 ```{r}
-round(stats["Protein (only)",]$Total/n.sums['Total'] * 100, digits=2)
+#round(stats["Protein (only)",]$Total/n.sums['Total'] * 100, digits=2)
 ```
 
 > What is the total number of the entries in the PDB?
 
 ```{r}
-n.sums['Total']
+#n.sums['Total']
 ```
 
 ## Using Molstar

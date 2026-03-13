@@ -28,6 +28,8 @@ Class 13 [DE Seq](class13/class13.md)
 
 Class 14 [RNA-Seq Mini-Project](class14/class14.md)
 
+Class 15 [Github](class15/class15.md)
+
 Class 18 [Downstream PCA Analysis](class18/class18.md)
 
 Class 19 [Pertusis Mini-Project](class19/class19.md)

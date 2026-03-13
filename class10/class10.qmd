@@ -20,6 +20,7 @@ The [Protein Data Bank (PDB)](http://www.rcsb.org/) is the main repository of bi
 stats <- read.csv("pdb_stats.csv", row.names = 1)
 #stats
 ```
+
 ```{r}
 #n.sums <- colSums(stats) # sum value for each column of the df
 #round((n.sums/n.sums['Total'] * 100), digits=2)
@@ -123,7 +124,7 @@ Have a wee peek:
 
 Peak at our "top hits"
 ```{r}
-head(hits$pdb.id)
+#head(hits$pdb.id)
 ```
 
 Now we can download these "top hits" and these will all be ADK (this is the name of the protein family)
